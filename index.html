@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSC418 – DevOps for Cloud Computing | COMSATS University Islamabad, Abbottabad</title>
+<meta name="description" content="CSC418 DevOps for Cloud Computing at COMSATS University Islamabad, Abbottabad Campus.">
+<link rel="icon" href="cui-logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a href="#home" class="brand"><img src="cui-logo.png" alt="COMSATS University Islamabad logo"><span>CSC418 · DevOps</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="links" id="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="tag">COMSATS University Islamabad · Abbottabad Campus</span>
+      <h1>CSC418: <span>DevOps for Cloud Computing</span></h1>
+      <p>Learn to build, ship and operate software at scale — from Linux and Git to CI/CD pipelines, containers and Azure infrastructure.</p>
+      <div class="cta">
+        <a href="#contact" class="btn">Get in touch</a>
+        <a href="#about" class="btn ghost">About the course</a>
+      </div>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <pre id="term"></pre>
+    </div>
+  </div>
+</section>
+
+<section id="topics" class="alt">
+  <div class="container">
+    <h2 class="reveal">What you'll learn</h2>
+    <p class="sub reveal">A hands-on journey through the modern DevOps toolchain.</p>
+    <div class="grid">
+      <article class="card reveal"><div class="ic">☁️</div><h3>Cloud Fundamentals</h3><p>Deploy and manage Ubuntu VMs and web servers on Microsoft Azure.</p></article>
+      <article class="card reveal"><div class="ic">🔁</div><h3>CI/CD Pipelines</h3><p>Automate build, test and release with GitHub Actions and Azure DevOps.</p></article>
+      <article class="card reveal"><div class="ic">🐳</div><h3>Containers</h3><p>Package apps with Docker and orchestrate them with Kubernetes.</p></article>
+      <article class="card reveal"><div class="ic">🏗️</div><h3>Infrastructure as Code</h3><p>Provision repeatable environments with Terraform and Bicep.</p></article>
+      <article class="card reveal"><div class="ic">📈</div><h3>Monitoring</h3><p>Observe, log and alert to keep systems reliable.</p></article>
+      <article class="card reveal"><div class="ic">🔐</div><h3>DevSecOps</h3><p>Build security into every stage of the delivery lifecycle.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <h2>About the course</h2>
+      <p>CSC418 introduces students of the Department of Computer Science at COMSATS University Islamabad, Abbottabad Campus, to the culture, practices and tools that unite development and operations.</p>
+      <p>Through weekly labs — including deploying a static website on an Azure Ubuntu VM — students gain practical, industry-relevant cloud skills.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b>16</b><small>Weeks</small></div>
+      <div class="stat"><b>12+</b><small>Hands-on labs</small></div>
+      <div class="stat"><b>Azure</b><small>Cloud platform</small></div>
+      <div class="stat"><b>CI/CD</b><small>End-to-end</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="container contact-grid">
+    <div class="info reveal">
+      <h2>Contact us</h2>
+      <p class="sub">Questions about the course or labs? Send a message.</p>
+      <p>📍 COMSATS University Islamabad, Abbottabad Campus, Pakistan</p>
+      <p>🎓 Department of Computer Science</p>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <label>Name<input id="name" name="name" required autocomplete="name"></label>
+      <label>Email<input id="email" name="email" type="email" required autocomplete="email"></label>
+      <label>Subject
+        <select id="subject" name="subject"><option>Course inquiry</option><option>Lab help</option><option>Other</option></select>
+      </label>
+      <label>Message<textarea id="message" name="message" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <div id="status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> CSC418 – DevOps for Cloud Computing · COMSATS University Islamabad, Abbottabad Campus</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
